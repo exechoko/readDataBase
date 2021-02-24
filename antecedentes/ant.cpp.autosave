@@ -1,0 +1,22 @@
+#include "ant.h"
+
+ant::ant()
+{
+
+}
+void ant:: set_id (int cant){
+   int id = this->cant;
+};
+
+void ant::set_dni(long dni){
+    long doc = this->dni;
+}
+
+void ant::set_nombre(QString nombre){
+    QString nom = nombre;
+}
+
+void set_dom(QString dom){
+    QString domi = dom;
+}
+void set_ant(QString antec)

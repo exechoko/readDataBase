@@ -1,0 +1,26 @@
+#ifndef ANT_H
+#define ANT_H
+
+#include <QObject>
+
+class ant{
+    
+protected:
+    int cant;
+    long dni;
+    QString *nombre;
+    QString *dom;
+    QString *antec;
+    
+public:
+    ant();
+    void set_id(int cant);
+    void set_dni(long dni);
+    void set_nombre(QString nombre);
+    void set_dom(QString dom);
+    void set_ant(QString antec);
+    
+    
+};
+
+#endif // ANT_H
