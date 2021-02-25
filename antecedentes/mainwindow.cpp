@@ -11,6 +11,7 @@
 #include <QSqlQuery>
 using namespace std;
 
+//estructura
 struct antecedentes{
     int cant;
     long dni;
@@ -37,29 +38,6 @@ void MainWindow::on_buscar_clicked()
     antecedentes per[1000];
     int c = 0;
     QMessageBox mensaje;
-
-    /*archi.open("./ident.txt");
-    if (archi.fail()){
-        mensaje.setText("Error en la apertura del archivo");
-        mensaje.exec();
-    } else {
-        archi >> per[cuantos].dni;
-        while ( !archi.eof() ) {
-            getline(archi,per[cuantos].nombre);
-            getline(archi,per[cuantos].dom);
-            getline(archi,per[cuantos].ant);
-            cuantos++;
-            archi >> per[cuantos].dni;
-        }
-    }
-
-    for (int i = 0; i < cuantos; i++) {
-        mensaje.setText(per[i].nombre);
-        mensaje.exec();
-        /*cout << "DNI: " << per[i].dni << "NOMBRE: " << per[i].nombre << "DOMICILIO: " << per[i].dom << "ANTECEDENTE: " << per[i].ant << endl;*/
-    /*}
-    archi.close();*/
-
 
     if (!QSqlDatabase::isDriverAvailable("QSQLITE")){
         mensaje.setText("Error: QSQLITE no esta disponible");
