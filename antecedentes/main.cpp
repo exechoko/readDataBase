@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "login.h"
 #include <QApplication>
 #include <QDebug>
 #include <QSqlDatabase>
@@ -7,8 +7,10 @@
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    //MainWindow w;
+    //w.show();
+    login l;
+    l.show();
 
     return a.exec();
 }

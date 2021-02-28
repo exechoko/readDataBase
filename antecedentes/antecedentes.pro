@@ -7,7 +7,7 @@
 QT       += core gui
 QT       += core sql
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += gui widgets
 
 TARGET = antecedentes
 TEMPLATE = app
@@ -26,13 +26,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        login.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        login.h \
         mainwindow.h
 
 FORMS += \
+        login.ui \
         mainwindow.ui
 
 
@@ -42,3 +45,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RC_ICONS = icono.ico
+
+RESOURCES += \
+    imagenes.qrc
