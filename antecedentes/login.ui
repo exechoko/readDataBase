@@ -30,16 +30,16 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>150</y>
+     <y>130</y>
      <width>341</width>
-     <height>56</height>
+     <height>78</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
+    <item row="0" column="0" alignment="Qt::AlignRight">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>Contraseña</string>
+       <string>Usuario</string>
       </property>
      </widget>
     </item>
@@ -50,15 +50,15 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="username"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
+    <item row="1" column="0" alignment="Qt::AlignRight">
+     <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Usuario</string>
+       <string>Contraseña</string>
       </property>
      </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="username"/>
     </item>
    </layout>
   </widget>
@@ -79,6 +79,25 @@
    </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_gif">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imagenes.qrc">:/new/prefix1/loading.gif</pixmap>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

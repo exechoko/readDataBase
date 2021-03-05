@@ -1,12 +1,16 @@
 #include "login.h"
 #include "ui_login.h"
-#include <QMovie>
+
 
 login::login(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::login)
 {
     ui->setupUi(this);
+
+    QMovie *movie = new QMovie(":/new/prefix1/loading.gif");
+    ui->label_gif->setMovie(movie);
+    movie->start();
 }
 
 login::~login()
@@ -14,9 +18,9 @@ login::~login()
     delete ui;
 }
 
-
 void login::on_pushButton_clicked()
 {
+
     QString username = ui->username->text();
     QString password = ui->password->text();
 
